@@ -33,7 +33,7 @@ INSERT INTO Funcionarios (Nome, Cargo, Salario, DepartamentoId) VALUES
 ('Cleison', 'Contador', 6500.00, 5);
 
 
-SELECT Funcionarios.FuncionarioId, Funcionarios.Nome, Funcionarios.Cargo, Departamentos.NomeDepartamento, Funcionarios.Salario
+SELECT Funcionarios.FuncionarioId, Funcionarios.Nome, Funcionarios.Cargo, Departamentos.NomeDepartamento, Funcionarios.Salario, Departamentos.DepartamentoId
 FROM Funcionarios
 JOIN Departamentos on Funcionarios.DepartamentoId = Departamentos.DepartamentoId;
 
