@@ -32,7 +32,8 @@ INSERT INTO Pedidos (PedidoID, ClienteID, DataPedido, ValorTotal) VALUES
 (0202, 5, '2023-09-06', 32.76);
 
 SELECT * FROM Clientes
-JOIN Pedidos on Clientes.ClienteID = Pedidos.ClienteID;
+JOIN Pedidos on Clientes.ClienteID = Pedidos.ClienteID
+order by Clientes.ClienteID;
 
 SELECT * FROM pedidos;
 
