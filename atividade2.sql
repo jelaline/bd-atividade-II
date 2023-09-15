@@ -35,9 +35,5 @@ INSERT INTO Comentarios (ArtigoId, Autor, Texto, DataComentario) VALUES
 SELECT * FROM Artigos
 JOIN Comentarios on Comentarios.ArtigoId = Artigos.ArtigoId;
 
-SELECT * FROM Artigos
-JOIN Comentarios on Comentarios.ArtigoId = Artigos.ArtigoId
-order by Comentarios.Autor;
-
 SELECT * FROM Comentarios;
 
